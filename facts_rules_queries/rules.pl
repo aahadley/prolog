@@ -29,3 +29,4 @@ playsAirGuitar(yolanda) :- listensToMusic(yolanda). /* Yolanda listens to music 
 
     ?- playsAirGuitar(yolanda).
     true.
+*/
