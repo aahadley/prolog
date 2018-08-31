@@ -16,23 +16,23 @@
 happy(vincent).
 listensToMusic(butch).
 
-playsAirGuitar(vincent) :- 
+playsAirGuitar(vincent) :-      /* Vincent play air guitar if he is happy, and listens to music. */
     listensToMusic(vincent), 
     happy(vincent).
 
-playsAirGuitar(butch) :-
+playsAirGuitar(butch) :-        /* Butch plays air guitar if he is happy, or listens to music. */
     happy(butch);
     listensToMusic(butch).
 
 /* Querying Knowledge Base 3:
 
-?- playsAirGuitar(vincent).     /* Vincent is happy, but does not listen to music. *//*
+?- playsAirGuitar(vincent).     /* Vincent is happy, but does not necessarily listen to music. *//*
     false.
 
     ?- playsAirGuitar(butch).
     true.
 
-    ?- listensToMusic(butch).
+    ?- listensToMusic(butch).   /* Butch listens to music, but does not necessarily play air guitar. *//*
     true.
 
     ?- happy(butch).

@@ -15,7 +15,7 @@
     A knowlege base of some facts will be built below. 
 */
 
-/* Knowlege Base 1 */
+/* Knowledge Base 1 */
 
 woman(mia).     /* Facts must be terminated with a period. */
 woman(jody).    /* They must also begin with a lower case letter */
@@ -57,5 +57,4 @@ party.
 
         ?- party.
         true.
-
 /*
